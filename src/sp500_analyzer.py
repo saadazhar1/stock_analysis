@@ -204,11 +204,11 @@ def analyze_rolling_returns(data):
     plt.show()
     
     # Print statistics about periods below 6% return
-    print("\nPeriods Below 6% Return:")
+    # print("\nPeriods Below 6% Return:")
     for period in periods:
         below_threshold = rolling_returns[period][rolling_returns[period] < 0.06]
         pct_below = len(below_threshold) / len(rolling_returns[period].dropna()) * 100
-        print(f"{period}-Year Rolling Returns: {pct_below:.1f}% of time below 6% threshold")
+        # print(f"{period}-Year Rolling Returns: {pct_below:.1f}% of time below 6% threshold")
 
 def main():
     # Fetch data
